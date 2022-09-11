@@ -247,7 +247,7 @@ function CreateList(dropdown) -- local
 
 	id = id + 1
 
-	local list = CreateFrame("Button", "PhanxConfigDropdown" .. id, dropdown)
+	local list = CreateFrame("Button", "PhanxConfigDropdown" .. id, dropdown, BackdropTemplateMixin and "BackdropTemplate")
 	list:SetFrameStrata("DIALOG")
 	list:SetToplevel(true)
 	list:Hide()
